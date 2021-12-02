@@ -1,11 +1,11 @@
 .titulo{
-    color: purple;
-    text-align: center;
+  color: blue;
+  text-align: center;
 }
 
 .img{
   width: 500px;
   height: 500px;
-  display: block;  /*centraliza a imagem (display e margin)*/
-  margin: 0 auto;  /*centraliza a imagem (display e margin)*/
+  display: block;
+  margin: 0 auto;
 }
