@@ -1,3 +1,17 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.cor-postagens{
+    background-color: #0D0D0D!important;
+    color: #F0F1F2;
+}
+
+.botao-atualizar{
+    background-color: #64588C!important;
+    color: #F0F1F2!important;
+}
+
+.fundo{
+    background-color: #64588C;
+}

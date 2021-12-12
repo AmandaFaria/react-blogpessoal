@@ -1,8 +1,22 @@
 .cursor{
     cursor: pointer;
-    color: white;
+    color: #0D0D0D;
+}
+
+.fundo-navbar{
+    background-color: #F0F1F2!important;
+}
+
+.fundo-hover:hover{
+    background-color: #D5BAD9;
+    padding: 10px;
 }
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
 }

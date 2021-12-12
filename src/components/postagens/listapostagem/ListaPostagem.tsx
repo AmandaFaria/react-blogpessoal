@@ -51,10 +51,10 @@ function ListaPostagem() {
     <>
       {
         posts.map(post => (
-          <Box m={2} >
+          <Box m={2}>
             <Card variant="outlined">
-              <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+              <CardContent className="cor-postagens">
+                <Typography className="cor-postagens" gutterBottom>
                   Postagens
                 </Typography>
                 <Typography variant="h5" component="h2">
@@ -67,12 +67,12 @@ function ListaPostagem() {
                   {post.tema?.descricao}
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions className="cor-postagens">
                 <Box display="flex" justifyContent="center" mb={1.5}>
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                      <Button variant="contained" size='small' className="botao-atualizar">
                         atualizar
                       </Button>
                     </Box>

@@ -6,3 +6,7 @@
     border-color: white !important;
     background-color: white !important;
 }
+
+.btnModal:hover{
+    background-color: #D5BAD9!important;
+}

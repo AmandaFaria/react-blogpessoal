@@ -32,8 +32,8 @@ function ListaTema() {
     }
   }, [token])
 
-  async function getTema() {
-    await busca("/tema", setTemas, {
+  async function getTemas() {
+    await busca("/temas", setTemas, {
       headers: {
         'Authorization': token
       }
@@ -41,13 +41,13 @@ function ListaTema() {
   }
 
   useEffect(() => {
-    getTema()
+    getTemas()
   }, [temas.length])
 
   return (
     <>
       {
-        temas.map(tema =>(
+        temas.map(temas =>(
         <Box m={2} >
           <Card variant="outlined">
             <CardContent>
@@ -55,20 +55,20 @@ function ListaTema() {
                 Tema
               </Typography>
               <Typography variant="h5" component="h2">
-                {tema.descricao}
+                {temas.descricao}
               </Typography>
             </CardContent>
             <CardActions>
               <Box display="flex" justifyContent="center" mb={1.5} >
 
-                <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
+                <Link to={`/formularioTema/${temas.id}`} className="text-decorator-none">
                   <Box mx={1}>
                     <Button variant="contained" className="marginLeft" size='small' color="primary" >
                       atualizar
                     </Button>
                   </Box>
                 </Link>
-                <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
+                <Link to={`/deletarTema/${temas.id}`} className="text-decorator-none">
                   <Box mx={1}>
                     <Button variant="contained" size='small' color="secondary">
                       deletar
