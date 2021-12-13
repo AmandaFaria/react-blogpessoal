@@ -1,5 +1,5 @@
 import React, {useState, useEffect, ChangeEvent} from 'react'
-import { Container, Typography, TextField, Button } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Grid } from "@material-ui/core"
 import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Service';
 import { useHistory, useParams } from 'react-router-dom';
@@ -102,15 +102,17 @@ function CadastroTema() {
   }
 
     return (
-        <Container maxWidth="sm" className="topo">
+        <Grid container direction='column' justifyContent='center' alignItems='center' className='fundo-login'>
+        <Container maxWidth="sm" className="topo" style={{height:'100vh'}}>
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
+                <Typography variant="h3" style={{color:"#F0F1F2"}} component="h1" align="center" >Formulário de cadastro tema</Typography>
                 <TextField value={temas.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+                <Button type="submit" variant="contained" style={{backgroundColor:"#D5BAD9", color:"#0D0D0D"}}>
                     Finalizar
                 </Button>
             </form>
         </Container>
+        </Grid>
     )
 }
 

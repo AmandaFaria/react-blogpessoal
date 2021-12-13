@@ -1,5 +1,5 @@
 .imagem{
-   background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+   background-image: url(https://i.imgur.com/ty4pVjf.jpeg);
    background-repeat: no-repeat;
    width: 100vh;
    min-height: 100vh;
@@ -8,9 +8,57 @@
 }
 
 .textos1{
+    color: #F0F1F2!important;
     font-weight: bold !important;
 }
 
 .text-decorator-none{
     text-decoration: none;
 }
+
+.fundo-login{
+    background-color: #64588C;
+    color: #0D0D0D!important;
+}
+
+.textos2{
+    color: #D5BAD9!important;
+    font-weight: bold !important;
+}
+
+.texto3{
+    color: #F0F1F2!important;
+}
+
+.btn-logar{
+    background-color: #D5BAD9!important;
+    color: #0D0D0D!important;
+}
+
+.MuiInputBase-input{   
+    color: #F0F1F2!important;
+}
+
+.Mui-focused fieldset{
+    border-color: #F0F1F2!important;
+}
+
+.label.Mui-focused{
+    color: #F0F1F2!important;
+}
+
+.MuiFormLabel-root{
+    color: #F0F1F2!important;
+}
+
+.MuiInput-underline:after{
+    border-bottom: #F0F1F2!important;
+}
+
+.MuiOutlinedInput-root fieldset{
+    border-color: #F0F1F2!important;
+}
+
+
+
+

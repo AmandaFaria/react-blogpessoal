@@ -1,3 +1,14 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.botao-atualizar{
+    background-color: #64588C!important;
+    color: #F0F1F2!important;
+}
+
+.cor-tema{
+    background-color: #0D0D0D!important;
+    color: #F0F1F2;
+}
+
